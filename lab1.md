@@ -95,16 +95,24 @@ In this example, we run the `cat` command from the lecture1 directory (Path: `/h
 ```
 The `cat` command is used to concatenate and output the contents of files that we include in the arguments. However, in this example, we passed no arguments to the command. 
 
-Notice that the prompt is missing. The terminal now outputs a copy of anything that is typed. For example, we can type "Hello World!" into the terminal, yielding the following result:
+Notice that the prompt is missing in the line directly after the command. The terminal will now output a copy of anything that is typed, instead of accepting commands. For example, we can type "Hello World!" into the terminal, yielding the following result:
 ```
 [user@sahara ~/lecture1]$ cat
 Hello World!
 Hello World!
 
 ```
-It's important to note that no error message is present. This is one indication that this is not an error.
+It's important to note that no error message is present, and this new input mode can be exited at any time with **[CTRL]+[SHIFT]+D**. This is one indication that this is not an error.
 
 ### Example 2: Using the command with a path to a directory as an argument.
+
+In this example, we run the `cat` command from the home directory (Path: `/home`):
+```
+[user@sahara ~]$ cat lecture1
+cat: lecture1: Is a directory
+[user@sahara ~]$
+```
+The cat command is not designed to operate on a directory. This causes an error. Notice that the output is an error message which indicates what went wrong; "`lecture1: Is a directory`".
 
 ### Example 3: Using the command with a path to a file as an argument.
 
