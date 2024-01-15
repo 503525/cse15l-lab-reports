@@ -78,6 +78,10 @@ In this example, we run the `ls` command from the lecture1 directory (Path: `/ho
 Hello.java
 [user@sahara ~/lecture1]$ 
 ```
+When we use the `ls` command with a path to a file as an argument, the command outputs the name of the file. 
+
+This output is not an error.
+
 
 
 ## Command 3: `cat`
