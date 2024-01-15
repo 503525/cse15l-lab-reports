@@ -56,8 +56,28 @@ Thus, the command executed properly, and no error occurred.
 
 ### Example 2: Using the command with a path to a directory as an argument.
 
+In this example, we run the `ls` command from the lecture1 directory (Path: `/home/lecture1`):
+```
+[user@sahara ~/lecture1]$ ls messages
+en-us.txt  es-mx.txt  zh-cn.txt
+[user@sahara ~/lecture1]$ 
+```
+Once again, the `ls` command is used to print out names of everything within a specified directory. In this case, we supplied the relative path to `/home/lecture1/messages` as an argument for the command. 
+
+This directory contains three text files: `en-us.txt`, `es-mx.txt` and `zh-cn.txt`. The three can be seen included in the output, directly underneath the command itself.
+
+Also, notice that the prompt remains unchanged; this indicates that the current working directory remains unchanged.
+
+This reflects the intended use and behavior of the `ls` command, and no error has occurred in this case. 
+
 ### Example 3: Using the command with a path to a file as an argument.
 
+In this example, we run the `ls` command from the lecture1 directory (Path: `/home/lecture1`):
+```
+[user@sahara ~/lecture1]$ ls Hello.java
+Hello.java
+[user@sahara ~/lecture1]$ 
+```
 
 
 ## Command 3: `cat`
