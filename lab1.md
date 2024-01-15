@@ -2,7 +2,7 @@
 
 ## Command 1: `cd`
 
-### Example 1: Using the command with no arguments.
+### Example 1: Using the `cd` command with no arguments.
 
 In this example, we run the `cd` command from the home directory (Path: `/home`):
 ```
@@ -13,7 +13,7 @@ Notice that nothing happened. The `cd` command is designed to change the working
 
 It's important to note that this is **not** an error. The command is working as intended.
 
-### Example 2: Using the command with a path to a directory as an argument.
+### Example 2: Using the `cd` command with a path to a directory as an argument.
 
 In this example, we run the `cd` command from the home directory (Path: `/home`):
 ```
@@ -24,7 +24,7 @@ The command did not produce any output. However, the prompt has changed; it now 
 
 This reflects the intended behavior of cd, and is not an error.
 
-### Example 3: Using the command with a path to a file as an argument.
+### Example 3: Using the `cd` command with a path to a file as an argument.
 
 In this example, we run the `cd` command from the lecture1 directory (Path: `/home/lecture1`):
 ```
@@ -39,7 +39,7 @@ The cd command is designed to take in a path to a directory as an argument, and 
 
 ## Command 2: `ls`
 
-### Example 1: Using the command with no arguments.
+### Example 1: Using the `ls` command with no arguments.
 
 In this example, we run the `ls` command from the lecture1 directory (Path: `/home/lecture1`):
 ```
@@ -54,7 +54,7 @@ In this case, we are using the command from within `/home/lecture1`, which is a 
 Thus, the command executed properly, and no error occurred. 
 
 
-### Example 2: Using the command with a path to a directory as an argument.
+### Example 2: Using the `ls` command with a path to a directory as an argument.
 
 In this example, we run the `ls` command from the lecture1 directory (Path: `/home/lecture1`):
 ```
@@ -70,7 +70,7 @@ Also, notice that the prompt remains unchanged; this indicates that the current 
 
 This reflects the intended use and behavior of the `ls` command, and no error has occurred in this case. 
 
-### Example 3: Using the command with a path to a file as an argument.
+### Example 3: Using the `ls` command with a path to a file as an argument.
 
 In this example, we run the `ls` command from the lecture1 directory (Path: `/home/lecture1`):
 ```
@@ -86,7 +86,7 @@ This output is not an error.
 
 ## Command 3: `cat`
 
-### Example 1: Using the command with no arguments.
+### Example 1: Using the `cat` command with no arguments.
 
 In this example, we run the `cat` command from the lecture1 directory (Path: `/home/lecture1`):
 ```
@@ -104,7 +104,7 @@ Hello World!
 ```
 It's important to note that no error message is present, and this new input mode can be exited at any time with **[CTRL]+[SHIFT]+D**. This is one indication that this is not an error.
 
-### Example 2: Using the command with a path to a directory as an argument.
+### Example 2: Using the `cat` command with a path to a directory as an argument.
 
 In this example, we run the `cat` command from the home directory (Path: `/home`):
 ```
@@ -114,7 +114,7 @@ cat: lecture1: Is a directory
 ```
 The cat command is not designed to operate on a directory. This causes an error. Notice that the output is an error message which indicates what went wrong; "`lecture1: Is a directory`".
 
-### Example 3: Using the command with a path to a file as an argument.
+### Example 3: Using the `cat` command with a path to a file as an argument.
 
 In this example, we run the `cat` command from the lecture1 directory (Path: `/home/lecture1`).
 ```
