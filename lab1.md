@@ -116,3 +116,15 @@ The cat command is not designed to operate on a directory. This causes an error.
 
 ### Example 3: Using the command with a path to a file as an argument.
 
+In this example, we run the `cat` command from the lecture1 directory (Path: `/home/lecture1`).
+```
+[user@sahara ~/lecture1]$ cat README
+To use this program:
+
+javac Hello.java
+java Hello messages/en-us.txt
+[user@sahara ~/lecture1]$ 
+```
+In this example, the file `/home/lecture1/README` contains instructions on how to compile and run the Hello.java program included in the lecture1 folder. These instructions make up the output of the cat command shown above.
+
+This reflects the intended use and behavior of this command, and is therefore not an error.
