@@ -82,11 +82,27 @@ When we use the `ls` command with a path to a file as an argument, the command o
 
 This output is not an error.
 
-
+---
 
 ## Command 3: `cat`
 
 ### Example 1: Using the command with no arguments.
+
+In this example, we run the `cat` command from the lecture1 directory (Path: `/home/lecture1`):
+```
+[user@sahara ~/lecture1]$ cat
+
+```
+The `cat` command is used to concatenate and output the contents of files that we include in the arguments. However, in this example, we passed no arguments to the command. 
+
+Notice that the prompt is missing. The terminal now outputs a copy of anything that is typed. For example, we can type "Hello World!" into the terminal, yielding the following result:
+```
+[user@sahara ~/lecture1]$ cat
+Hello World!
+Hello World!
+
+```
+It's important to note that no error message is present. This is one indication that this is not an error.
 
 ### Example 2: Using the command with a path to a directory as an argument.
 
