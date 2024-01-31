@@ -4,12 +4,12 @@
 
 ### Example 1: Using the `cd` command with no arguments.
 
-In this example, we run the `cd` command from the home directory (Path: `/home`):
+In this example, we run the `cd` command from the lecture1 directory (Path: `/home/lecture1`):
 ```
-[user@sahara ~]$ cd
+[user@sahara ~/lecture1]$ cd
 [user@sahara ~]$ 
 ```
-Notice that nothing happened. The `cd` command is designed to change the working directory to the one specified by the argument (if provided). We did not provide a directory to change to; thus, the command does not change the working directory. 
+Notice that the prompt changed. This is because, without arguments, the `cd` command takes the user to the home directory by default. In fact, using the `pwd` command from here tells us that the current working directory has changed to `/home`, which is the home directory.
 
 It's important to note that this is **not** an error. The command is working as intended.
 
