@@ -65,7 +65,8 @@ public class Server {
     }
 }
 ```
-Here is the ChatServer.java file responsible for actually processing the information to be modified and displayed based on incoming requests. 
+#### ChatServer
+The ChatServer.java file responsible for actually processing the information to be modified and displayed based on incoming requests. 
 ```java
 import java.io.IOException;
 import java.net.URI;
@@ -121,7 +122,9 @@ _In the following screenshots, the server is running on local port `4000`._
 
 [comment]: <> (Which methods in the code are called?)
 
-When the URL is typed into the browser, an HTTP request is sent to the HttpServer instance created by the Server class (See: [Server.java](#server))
+When the URL is typed into the browser, an HTTP request is sent to the `HttpServer` instance created by the `Server` class (See: [Server.java](#server)). In order to process the request and produce the desired output, `HttpServer` calls the `handle` method in the `ServerHttpHandler` class, also seen in [Server.java](#server). In this call, the `HttpServer` sends an "`HttpExchange`" object as an argument, which is an object that contains both the HTTP request information, as well as the output information associated with that request.
+
+
 
 [comment]: <> (What are the relevant arguments to those methods?)
 
