@@ -121,7 +121,7 @@ _In the following screenshots, the server is running on local port `4000`._
 
 [comment]: <> (Which methods in the code are called?)
 
-When the URL is typed into the browser, an HTTP request is sent to the HttpServer instance created by the Server class (See: [Server.java](#Server))
+When the URL is typed into the browser, an HTTP request is sent to the HttpServer instance created by the Server class (See: [Server.java](#server))
 
 [comment]: <> (What are the relevant arguments to those methods?)
 
