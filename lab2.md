@@ -142,4 +142,13 @@ The chatstring is returned by the `handleRequest` method to the `ServerHttpHandl
 
 ## Part 2: Command Line SSH
 
+![image](https://github.com/503525/cse15l-lab-reports/blob/main/Lab%203%20SSH%20Key%20screenshot.PNG?raw=true)
+
+![image](https://github.com/503525/cse15l-lab-reports/blob/main/Lab%203%20SSH%20Key%20screenshot.PNG?raw=true)
+
+![image](https://github.com/503525/cse15l-lab-reports/blob/main/Lab%203%20SSH%20Key%20screenshot.PNG?raw=true)
+
+
 ## Part 3: Something Learned
+
+Some
