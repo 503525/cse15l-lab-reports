@@ -6,7 +6,7 @@
 
 The Chat Server was adapted from an existing program, NumberServer, which was included as part of the CSE 15L Wavelet repository from Week 2. The original NumberServer program can be viewed [here](https://github.com/ucsd-cse15l-f23/wavelet).
 
-Here is the Server.java file responsible for actually handling connections to the server. 
+Here is the Server.java file responsible for actually handling connections to the server. This file is unchanged from the one used in NumberServer.
 ```java
 // A simple web server using Java's built-in HttpServer
 
@@ -62,3 +62,52 @@ public class Server {
     }
 }
 ```
+Here is the ChatServer.java file responsible for actually processing the information to be modified and displayed based on incoming requests.
+```java
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    // The string that gets modified by the incoming requests.
+    String chatString = "";
+
+    public String handleRequest(URI url) {
+        // Requests are always of the form:
+        // /add-message ? s=[MESSAGE] & user= [USER]
+        String message = "";
+        String user = "";
+        if (url.getPath().equals("/add-message")) {
+            String[] parameters = url.getQuery().split("&");
+
+            // The first parameter is the message (s=MESSAGE)
+            String[] internalParam = parameters[0].split("=");
+            message = internalParam[1];
+
+            internalParam = parameters[1].split("=");
+            user = internalParam[1];
+
+            chatString += user + ": " + message + "\n";
+
+            return chatString;
+        } else {
+            return "404 Not Found!";
+        }
+    }
+}
+
+
+// Reused from CSE15L Wavelet - NumberServer (Week 2 Lab)
+class ChatServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
+
