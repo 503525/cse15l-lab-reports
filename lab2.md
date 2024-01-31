@@ -142,13 +142,19 @@ The chatstring is returned by the `handleRequest` method to the `ServerHttpHandl
 
 ## Part 2: Command Line SSH
 
-![image](https://github.com/503525/cse15l-lab-reports/blob/main/Lab%203%20SSH%20Key%20screenshot.PNG?raw=true)
+Absolute Path to Private SSH key:
 
 ![image](https://github.com/503525/cse15l-lab-reports/blob/main/Lab%203%20SSH%20Key%20screenshot.PNG?raw=true)
 
-![image](https://github.com/503525/cse15l-lab-reports/blob/main/Lab%203%20SSH%20Key%20screenshot.PNG?raw=true)
+Absolute Path to Public SSH Key:
+
+![image](https://raw.githubusercontent.com/503525/cse15l-lab-reports/main/Lab%203%20SSH%20Key%20Screenshot%202.PNG)
+
+A Terminal Interaction, logging in without a password.
+
+![image](https://raw.githubusercontent.com/503525/cse15l-lab-reports/main/Lab%203%20Login%20No%20Pass%20Screenshot.PNG)
 
 
 ## Part 3: Something Learned
 
-Some
+Perhaps one of the most important things I learned in Week 3 was how to use SSH in order to connect to devices efficiently. In the past, I have briefly attempted to use SSH to connect to GitHub while working on projects, but I've never been able to do it properly. Being able to connect to devices using SSH, and retain the connection without needing a password using generated Keys, will be monumental in improving my effiency when working on projects.
