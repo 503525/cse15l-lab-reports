@@ -4,7 +4,7 @@
 
 ## Part 1: ChatServer
 
-The Chat Server was adapted from an existing program, NumberServer, which was included as part of the CSE 15L Wavelet repository from Week 2. The original NumberServer program can be viewed [here][https://github.com/ucsd-cse15l-f23/wavelet].
+The Chat Server was adapted from an existing program, NumberServer, which was included as part of the CSE 15L Wavelet repository from Week 2. The original NumberServer program can be viewed [here](https://github.com/ucsd-cse15l-f23/wavelet).
 
 Here is the Server.java file responsible for actually handling connections to the server. 
 ```java
