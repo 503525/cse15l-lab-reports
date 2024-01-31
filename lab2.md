@@ -120,24 +120,26 @@ _In the following screenshots, the server is running on local port `4000`._
 
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/17e248d6-e297-468e-a0d3-1b3565aa4c4b)
 
-[comment]: <> (Which methods in the code are called?)
-
 When the URL is typed into the browser, an HTTP request is sent to the `HttpServer` instance created by the `Server` class (See: [Server.java](#server)). In order to process the request and produce the desired output, `HttpServer` calls the `handle` method in the `ServerHttpHandler` class, also seen in [Server.java](#server). In this call, the `HttpServer` sends an "`HttpExchange`" object as an argument, which is an object that contains both the HTTP request information, as well as the output information associated with that request.
 
+Within the `handle` method, the `Handler`'s `handleRequest` method is called, with the URI of the request passed as an argument. (See: [ChatServer.java](#chatserver)). The `handleRequest` method takes the path of the URI (In this case, `/add-message?s=Hello World!&user=AnonymousUser2024` and splits it into various components, based on the assumption of a fixed format for URI requests. The relevant information is extracted from these pieces, and is stored in the `Handler`'s `chatstring` instance variable with additional formatting. 
 
+The `chatstring`, which was initially empty, now has the value `"AnonymousUser2024: Hello World!\n"`, where `\n` corresponds to a newline character.
 
-[comment]: <> (What are the relevant arguments to those methods?)
-
-[comment]: <> (What are the values of any relevant fields of the class?)
-
-[comment]: <> (how do values of relevant fields of the class change?)
+The chatstring is returned by the `handleRequest` method to the `ServerHttpHandler`'s `handle` method to be output. 
 
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/cb50ba09-7f36-4ba0-aaa6-093968892da4)
 
-[comment]: <> (Which methods in the code are called?)
+The process for handling a second request is very similar to how the first one was handled. 
 
-[comment]: <> (What are the relevant arguments to those methods?)
+When the URL is typed into the browser, an HTTP request is sent to the `HttpServer` instance created by the `Server` class (See: [Server.java](#server)). In order to process the request and produce the desired output, `HttpServer` calls the `handle` method in the `ServerHttpHandler` class, also seen in [Server.java](#server). In this call, the `HttpServer` sends an "`HttpExchange`" object as an argument, which is an object that contains both the HTTP request information, as well as the output information associated with that request.
 
-[comment]: <> (What are the values of any relevant fields of the class?)
+Within the `handle` method, the `Handler`'s `handleRequest` method is called, with the URI of the request passed as an argument. (See: [ChatServer.java](#chatserver)). The `handleRequest` method takes the path of the URI (In this case, `/add-message?s="woah&user=anotherPerson` and splits it into various components, based on the assumption of a fixed format for URI requests. The relevant information is extracted from these pieces, and is stored in the `Handler`'s `chatstring` instance variable with additional formatting. 
 
-[comment]: <> (how do values of relevant fields of the class change?)
+It's important to note that, up to now, the `chatstring` has remained with the value from the previous Http request, and thus initially contains the value `"AnonymousUser2024: Hello World!\n"`. Now, the value is changed to `"AnonymousUser2024: Hello World!\nanotherPerson: woah\n"`.
+
+The chatstring is returned by the `handleRequest` method to the `ServerHttpHandler`'s `handle` method to be output. 
+
+## Part 2: Command Line SSH
+
+## Part 3: Something Learned
