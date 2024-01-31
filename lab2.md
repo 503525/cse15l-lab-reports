@@ -8,7 +8,8 @@
 
 The Chat Server was adapted from an existing program, NumberServer, which was included as part of the CSE 15L Wavelet repository from Week 2. The original NumberServer program can be viewed [here](https://github.com/ucsd-cse15l-f23/wavelet).
 
-Here is the Server.java file responsible for actually handling connections to the server. This file is unchanged from the one used in NumberServer.
+#### Server
+The Server.java file is responsible for actually handling connections to the server. This file is unchanged from the one used in NumberServer.
 ```java
 // A simple web server using Java's built-in HttpServer
 
@@ -118,4 +119,22 @@ _In the following screenshots, the server is running on local port `4000`._
 
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/17e248d6-e297-468e-a0d3-1b3565aa4c4b)
 
+[comment]: <> (Which methods in the code are called?)
+
+When the URL is typed into the browser, an HTTP request is sent to the HttpServer instance created by the Server class (See: [Server.java](#Server))
+
+[comment]: <> (What are the relevant arguments to those methods?)
+
+[comment]: <> (What are the values of any relevant fields of the class?)
+
+[comment]: <> (how do values of relevant fields of the class change?)
+
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/cb50ba09-7f36-4ba0-aaa6-093968892da4)
+
+[comment]: <> (Which methods in the code are called?)
+
+[comment]: <> (What are the relevant arguments to those methods?)
+
+[comment]: <> (What are the values of any relevant fields of the class?)
+
+[comment]: <> (how do values of relevant fields of the class change?)
