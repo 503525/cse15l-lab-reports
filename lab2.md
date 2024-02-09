@@ -144,11 +144,13 @@ The chatstring is returned by the `handleRequest` method to the `ServerHttpHandl
 
 Absolute Path to Private SSH key:
 
-![image](https://github.com/503525/cse15l-lab-reports/blob/main/Lab%203%20SSH%20Key%20screenshot.PNG?raw=true)
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/e2bc0f05-2c02-4d26-9172-cbb244f2f42e)
+
 
 Absolute Path to Public SSH Key:
 
-![image](https://raw.githubusercontent.com/503525/cse15l-lab-reports/main/Lab%203%20SSH%20Key%20Screenshot%202.PNG)
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/e4a94c7b-a71f-49d5-b2c6-8e79a82e14c2)
+
 
 A Terminal Interaction, logging in without a password.
 
