@@ -5,3 +5,5 @@
 ## Lab Report 2 - [Servers and SSH Keys](./lab2.md)
 
 ## Lab Report 3 - [Bugs and Commands](./lab3.md)
+
+## Lab Report 4 - [Vim](./lab4.md)
