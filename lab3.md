@@ -127,11 +127,50 @@ For more information, here is the source from which I found out about this comma
 
 This option allows a user to search for files based on their size. 
 
-#### Example 1: 
+#### Example 1: `-size +n`
 
-#### Example 2: 
+The `+n` option searches for files with more than `n` bytes, where `n` is an integer. 
+
+In this example, we can search for all of the files in `./technical` that contain more than 250000 bytes. 
+
+```bash
+$ find ./technical/ -size +500
+./technical/911report/chapter-13.4.txt
+./technical/911report/chapter-13.5.txt
+./technical/911report/chapter-3.txt
+./technical/government/Gen_Account_Office/d01591sp.txt
+./technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+```
+
+It may be useful to note that this only works on files; it will not count the total number of characters within files of a directory.
+
+This can be used when attempting to optimize the size of a project, so as to modify or remove large files that could be taking up uneccesary space.
+
+This can also be useful when refactoring the codebase of a project, so as to evaluate large files that can be potentially split into multiple smaller files that are easier to maintain.
+
+#### Example 2: `-size -nc`
+
+The `-n` option searches for files with less than `n` bytes, where `n` is an integer. 
+
+In this example, we can search for all the files in `./technical` that contain less than 1000 bytes.
+
+```bash
+$ find technical/ -type f -size -1000c
+technical/plos/pmed.0020191.txt
+technical/plos/pmed.0020226.txt
+```
+
+Note that we were able to combine command options so as to only search for files of a certain size (by default, this would also return directories for any number of bytes greater than 1). 
+
+By combining commands, this could be useful for determining empty files that have been added by a bash script but have not yet been modified.
+
+For more information, here is the source from which I found out about this command option: [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/]
+
+---
 
 ### Option 4: `find -exec`
+
+
 
 This option allows a user 
 
