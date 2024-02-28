@@ -27,12 +27,18 @@ The `find` command is a useful command that allows one to recursively search for
 
 In this section, we will go over some interesting command line options that can be used to refine a search.
 
-This information was found here: [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/]. Check it out for more information.
+All information for this section was found here: [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/].
 
 ### Option 1: `find -type`
+
+```bash
+find grep lol
+```
 
 ### Option 2: `find -name`
 
 ### Option 3: `find -size`
 
-### Option 4: `
+### Option 4: `find -exec`
+
+
