@@ -15,6 +15,58 @@
 
 ## Part 1: Bugs
 
+In this example, we will debug a method that was created to reverse the order of the elements in a given array.
+
+The method is as follows:
+
+```java
+public class ArrayExamples {
+
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+...
+```
+
+This method works for some inputs, as shown by the following JUnit test.
+
+```java
+@Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+```
+
+In this case, the input is an array with a single element, `[3]`.
+
+
+This method has a bug, as evidenced by the following JUnit test:
+```java
+@Test
+  public void testReverseInPlaceFailureInducing() {
+    int[] input1 = { 1, 2, 3, 4 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 4, 3, 2, 1 }, input1);
+  }
+```
+
+In this case, the failure inducing input is an array with four distinct elements, `[ 1, 2, 3, 4 ]`.
+
+This results in the following symptom:
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/f803f144-135a-4c19-a3cb-ad17511f24f3)
+
+
+In order to fix this, we 
+
+
+
+
+
 
 
 
