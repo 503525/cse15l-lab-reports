@@ -31,8 +31,40 @@ All information for this section was found here: [https://www.geeksforgeeks.org/
 
 ### Option 1: `find -type`
 
+The `-type` option for the `find` command allows users to filter the search for a specific type of object. 
+
+#### Example 1: `-type d`
+
+This option will filter the output of the `find` command to directories.
+
+From within the `docsearch` directory, we can search for all of the directories within `./technical`, as shown here:
 ```bash
-find grep lol
+$ find ./technical/ -type d
+./technical/
+./technical/911report
+./technical/biomed
+./technical/government
+./technical/government/About_LSC
+./technical/government/Alcohol_Problems
+./technical/government/Env_Prot_Agen
+./technical/government/Gen_Account_Office
+./technical/government/Media
+./technical/government/Post_Rate_Comm
+./technical/plos
+```
+
+Notice that not only does the `find` command output all of the directories immediately within `./technical`, but it also recursively outputs all of the directories that are nested within other directories. In this example, we can see many of the directories that are present within `./technical/government`. 
+
+This can be useful if one wants to perform operations on, or document information about, the directories in a project. 
+
+#### Example 2: `type -f`
+
+This option will filter the output of the `find` command to files.
+
+Notice in the above example that `./technical/government` has many directories. By using the following command, we can recursively search for all of the files in `.technical/government` without outputting any of the directories themselves.
+
+```java
+if (then)
 ```
 
 ### Option 2: `find -name`
