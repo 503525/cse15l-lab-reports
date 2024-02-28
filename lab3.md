@@ -74,11 +74,18 @@ $ find ./technical/government/ -type f
 ./technical/government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt
 ... [278 more lines]
 ```
+[*The output has been cut short for the sake of brevity*]
 
-[**The output has been cut short for the sake of brevity**]
+Notice that the output does not contain any directories. Using `find ./technical/government` without specifying the `-type` option would have output each directory before outputting the files within them. However, in this example, we see files within the directory `./technical/government/About_LSC` without seeing that directory itself in the output.
 
+This can be incredibly useful when performing operations on a large number of files that would not otherwise work as intended on directories. 
 
+For more information, here is the source from which I found out about this command option: [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/]
+
+---
 ### Option 2: `find -name`
+
+
 
 ### Option 3: `find -size`
 
