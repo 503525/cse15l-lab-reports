@@ -198,3 +198,27 @@ This can be a useful command for cleaning up a script's working directory if it 
 
 #### Example 2: `-exec cat`
 
+By combining the `find` command with the `cat` command like this, we can recursively output the contents of all files that match a specific criteria. 
+
+In this case, we will search for a file and output its contents, without specifically knowing where the file is within `technical/`.
+
+```bash
+$ find ./technical/ -name "Texas_Lawyer.txt" -exec cat {} \;
+
+
+
+
+Texas Lawyer
+
+GRANT PROVIDES FUNDING TO CONNECT LEGAL AID CALL CENTERS
+Mary Alice Robbins September 9, 2002
+A $100,000 technology grant awarded to Texas Rural Legal Aid
+will fund an Austin call center and connect it with centers in San
+Antonio and Corpus Christi to assist the poor with legal problems
+in a 68-county area of Southwest Texas. Washington, D.C.-based
+... [87 more lines]
+```
+
+[_Output shortened for brevity_]
+
+This command option could be very useful for outputting the contents of multiple files into a single file for output by a script. For example, a grader can take all of outputs from all Unit Tests, and then create a single file to be seen by the grader. 
