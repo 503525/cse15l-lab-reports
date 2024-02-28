@@ -170,12 +170,31 @@ For more information, here is the source from which I found out about this comma
 
 ### Option 4: `find -exec`
 
+This option allows a user to execute another command for each file found by the `find` command.
 
+#### Example 1: `-exec rm`
 
-This option allows a user 
+By combining the `find` command with the `rm` command like this, we can recursively remove all files that match a specific criteria. 
 
-#### Example 1: 
+For example, we go off of the previous example and remove all files in `technical` that are less than 1000 bytes. 
 
-#### Example 2: 
+```bash
+$ find technical/ -type f -size -1000c -exec rm {} \;
+$
+```
 
+Notice that there was no output. This is because the output is determined by `rm`, which has no output as it is written. 
+
+However, when we go to search for all files that are less than 1000 bytes, we see nothing returned. 
+
+```bash
+$ find technical/ -type f -size -1000c
+$
+```
+
+This is because there are no files in `technical` that are less than 1000 bytes anymore. 
+
+This can be a useful command for cleaning up a script's working directory if it creates a lot of helper files. 
+
+#### Example 2: `-exec cat`
 
