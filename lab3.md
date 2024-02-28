@@ -75,6 +75,9 @@ $ find ./technical/government/ -type f
 ... [278 more lines]
 ```
 
+[**The output has been cut short for the sake of brevity**]
+
+
 ### Option 2: `find -name`
 
 ### Option 3: `find -size`
