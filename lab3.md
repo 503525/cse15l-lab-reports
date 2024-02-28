@@ -85,10 +85,58 @@ For more information, here is the source from which I found out about this comma
 ---
 ### Option 2: `find -name`
 
+The `-name` option allows a user to search for files or directories with a specific name. It also supports patterns.
 
+#### Example 1: `-name "<full-name>"`
+
+This option will force the `find` command to search for a single file, and then output its relative path. 
+
+For example, we can search for the location of a specific file named `Texas_Lawyer.txt`.
+
+```bash
+$ find ./technical/ -name "Texas_Lawyer.txt"
+./technical/government/Media/Texas_Lawyer.txt
+```
+
+This can be particularly useful if a user needs to access a specific file or directory within a very large project, but does not know where specifically the file is located. 
+
+This option will also return no output if the target file or directory does not exist. Thus, this can be useful for determining existence in a large project.
+
+#### Example 2: `-name "<pattern>"
+
+This option will list all of the files or directories that match the target pattern. 
+
+In this example, we can look for all files or directories that start with `Barnes`:
+
+```bash
+$ find ./technical/ -name "Barnes*"
+./technical/government/Media/Barnes_new_job.txt
+./technical/government/Media/Barnes_pro_bono.txt
+./technical/government/Media/Barnes_Volunteers.txt
+```
+
+If a project has naming conventions that help identify files, this can be useful for finding all of the files with specific names. 
+
+Perhaps more useful is how this can be used to find files with specific extensions; for example, the pattern `*.java` can be used to find all java files within a directory.
+
+For more information, here is the source from which I found out about this command option: [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/]
+
+---
 
 ### Option 3: `find -size`
 
+This option allows a user to search for files based on their size. 
+
+#### Example 1: 
+
+#### Example 2: 
+
 ### Option 4: `find -exec`
+
+This option allows a user 
+
+#### Example 1: 
+
+#### Example 2: 
 
 
