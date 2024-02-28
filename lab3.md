@@ -63,8 +63,16 @@ This option will filter the output of the `find` command to files.
 
 Notice in the above example that `./technical/government` has many directories. By using the following command, we can recursively search for all of the files in `.technical/government` without outputting any of the directories themselves.
 
-```java
-if (then)
+```bash
+$ find ./technical/government/ -type f
+./technical/government/About_LSC/Comments_on_semiannual.txt
+./technical/government/About_LSC/commission_report.txt
+./technical/government/About_LSC/conference_highlights.txt
+./technical/government/About_LSC/CONFIG_STANDARDS.txt
+./technical/government/About_LSC/diversity_priorities.txt
+./technical/government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
+./technical/government/About_LSC/LegalServCorp_v_VelazquezOpinion.txt
+... [278 more lines]
 ```
 
 ### Option 2: `find -name`
