@@ -19,3 +19,20 @@
 [comment]: <> (Find four interesting command line options for less, find, or grep)
 [comment]: <> (Find two examples of using each option on files from the docsearch technical directory)
 [comment]: <> (Cite your sources!)
+
+---
+## Part Two: Researching Commands (Find)
+
+The `find` command is a useful command that allows one to recursively search for files and directories within a given directory.
+
+In this section, we will go over some interesting command line options that can be used to refine a search.
+
+This information was found here: [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/]. Check it out for more information.
+
+### Option 1: `find -type`
+
+### Option 2: `find -name`
+
+### Option 3: `find -size`
+
+### Option 4: `
