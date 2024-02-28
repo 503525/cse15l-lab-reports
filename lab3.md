@@ -61,8 +61,26 @@ This results in the following symptom:
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/f803f144-135a-4c19-a3cb-ad17511f24f3)
 
 
-In order to fix this, we 
+Examining the original method implementation reveals why this occurs. 
 
+The method is written such that the array overwrites values it will need to use later, so half of the values will end up incorrect. 
+
+By temporarily storing the values that would otherwise be overwritten, all of the values in the array can be moved without any loss of information.
+
+```java
+  static void reverseInPlace(int[] arr) {
+    int temp = 0;
+    for(int i = 0; i < arr.length / 2; i += 1) {
+      temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+  }
+```
+
+Upon making this change, the symptom also disappears, since the proper output is now being produced for the previously failure-inducing input.
+
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/3e416031-9784-488d-9754-51861c267bcc)
 
 
 
