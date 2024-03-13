@@ -72,11 +72,41 @@ In doing this, the loop increments the correct variable, and so the code should 
 To save the file and exit vim, I typed `:wq`. 
 
 
-
-
-
-
-
 ## Running the tests after debugging:
 
+Keys Pressed: `<up> <up> <Enter>`
+
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/7553e484-6d5c-4aac-a995-8e1304a720f0)
+
+The Bash terminal saves all recent commands, and pressing the `<up>` arrow allows a user to go through the commands from most recent to least recent. 
+
+Because the last two commands I typed were to run the test script and then open vim, I simply needed to press the `<up>` arrow twice to access the `bash test.sh` command. Then, I typed `<Enter>` to run it. 
+
+
 ## Pushing the changes to GitHub:
+
+Keys Pressed: `git add <Tab>` `<Enter>`, `git commit -m "Fixed Merge Method in ListExamples.java"` `<Enter>`, `git push` `<Enter>`.
+
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/26a68c1e-648c-45e5-802a-4b547978eae0)
+
+In order to push changes to GitHub, one first needs to commmit the changes to their local repository. 
+
+We begin by staging `ListExamples.java` to be added to the commit. 
+
+In order to do this, I typed `git add ` and then pressed `<Tab>` to automatically complete the name of the altered file. 
+
+After pressing `<Enter>`, it was time to commit to the local repository.
+
+I typed `git commit -m "Fixed Merge Method in ListExamples.java"` in order to do this. Notice that the `-m` flag on the `commit` command allowed me to include the commit message as a part of the command, rather than having to open vim and edit it from there. 
+
+After pressing `<Enter>` to submit the command, I was ready to push the changes. 
+
+This was done through typing the command `git push`, and then pressing `<Enter>`. 
+
+After this, my GitHub page updated to show the following:
+
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/800dccad-7d97-496c-959e-16ce37e10ccf)
+
+---
+
+So, in summary: Without opening anything outside of the terminal, we cloned a buggy program from an online GitHub repository, tested the program, debugged and verified the program, and pushed the changes back to GitHub. We were able to do this thanks to the wealth of useful commands available through bash, git, and vim. 
