@@ -47,6 +47,36 @@ Then, from within the `lab7` directory, I ran the tests by typing `bash t`, and 
 
 ## Editing the code:
 
+Keys Pressed: `vim <Shift>+L` `<Tab>` `.` `<Tab>` `<Enter>`, `44 <Shift>+G` `e` `r2`, `:wq` `<Enter>`. 
+
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/d8a9d279-efb3-4d4a-acb3-17a3ed2c6569)
+
+In order to edit the code from the terminal, I used Vim, a terminal-based text editor. 
+
+In order to access the file, I typed `vim `, followed by `<Shift> + l` in order to type a capital L, and then `<Tab>` in order to complete the name of the ListExamples java file.  
+
+In order to complete the `.java` portion, I typed `.` and then used `<Tab>` to automatically complete the file extension.
+
+Pressing the `<Enter>` key opened vim. 
+
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/f2659264-420d-45fd-8ea2-7fe294da8dfb)
+
+From within vim, I could see that the bug was present in the final `while` loop of the `merge` method, on the 44th line of the program. Here, the code increments the wrong variable. 
+
+In order to move to line 44, I typed `44 <Shift>+G`. 
+
+Next, I typed `e` to move to the end of the word with the faulty index, and pressed `r2` in order to replace the final character of `index1` with a `2`. 
+
+In doing this, the loop increments the correct variable, and so the code should run correctly.
+
+To save the file and exit vim, I typed `:wq`. 
+
+
+
+
+
+
+
 ## Running the tests after debugging:
 
 ## Pushing the changes to GitHub:
