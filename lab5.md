@@ -38,6 +38,8 @@ To trigger the bug:
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/f18a6308-5724-4872-a896-c1f05ff67f2f)
 
 
+In order to fix the bug, the incremented variable in Line 44 needs to be changed from index1 to index2. 
+
 
 ## Part 2 - Reflection
 
