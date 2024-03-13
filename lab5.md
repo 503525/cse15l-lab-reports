@@ -21,6 +21,23 @@ __________
     - test.sh
 ```
 
+The contents of each file:
+`ListExamples.java`
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/8b2b7f53-498a-4ab1-b51e-83665dea3c59)
+
+`ListExamplesTests.java`
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/b1f2dc32-f6c2-4e86-ad30-ea1f6a8e1f17)
+
+`test.sh`
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/c673bcec-059d-4daa-8389-31aefc6ef14e)
+
+
+
+
+To trigger the bug: 
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/f18a6308-5724-4872-a896-c1f05ff67f2f)
+
+
 
 ## Part 2 - Reflection
 
