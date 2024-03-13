@@ -7,3 +7,5 @@
 ## Lab Report 3 - [Bugs and Commands](./lab3.md)
 
 ## Lab Report 4 - [Vim](./lab4.md)
+
+## Lab Report 5 - [Putting It All Together](./lab5.md)
