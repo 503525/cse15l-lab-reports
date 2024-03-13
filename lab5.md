@@ -5,9 +5,35 @@ __________
 
 ### Student Post:
 
+Hello, 
+
+I was working on my submission for ListExamples.java when I came across a bug in my program, which I am not sure how to fix. 
+
+When I run my unit tests through the script, it gives me this symptom:
+
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/5af072da-83ef-4070-9f13-2b41fa667ff9)
+
+The test that failed was the one for testing the Merge Command. It says that the test timed out at Line 44, which is inside of a while loop in the Merge method of my ListExamples.java file. Because of this, I think that there's an infinite loop happening in my code. 
+
+How can I go about fixing this issue?
+
+Thank you, 
+- A Student.
+
 ### Ta Response:
 
+Hello Student, 
+
+It could be the case that you have an infinite loop in your program. Try using the Java Debugger (JDB) in order to see precisely what is going on. 
+
+To run the JDB, you can run the following commands: 
+
+
 ### Student's Implementation of TA Advice:
+
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/c7669796-1676-496f-9e30-295fc1188f43)
+
+
 
 ### The Setup of the Problem:
 
@@ -23,7 +49,8 @@ __________
 
 The contents of each file:
 `ListExamples.java`
-![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/8b2b7f53-498a-4ab1-b51e-83665dea3c59)
+![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/4d2cc406-7824-4fae-8e74-dcadb04e94b7)
+
 
 `ListExamplesTests.java`
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/b1f2dc32-f6c2-4e86-ad30-ea1f6a8e1f17)
