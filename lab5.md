@@ -3,6 +3,25 @@ __________
 
 ## Part 1 - Debugging Scenario
 
+### Student Post:
+
+### Ta Response:
+
+### Student's Implementation of TA Advice:
+
+### The Setup of the Problem:
+
+```
+- lab7
+    - lib
+        - hamcrest-core-1.3.jar
+        - junit-4.13.2.jar
+    - ListExamples.java
+    - ListExamplesTests.java
+    - test.sh
+```
+
+
 ## Part 2 - Reflection
 
 One of the most important technical skills I learned throughout the latter half of the quarter was how to properly use vim. I had a small amount of exposure to vim through a previous course, and all that stayed with me was how cumbersome it was to use. Now, however, as I am beginning to grow comfortable with it, I've started to appreciate all of the commands available at the literal press of a buttom. I've even started to use Vim Shortcuts from whithin IDEs in order to work on assignments for other classes. 
