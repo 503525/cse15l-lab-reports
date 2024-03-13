@@ -14,14 +14,16 @@ However, because the Bash terminal conveniently saves the most recent commands t
 
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/2c61e330-7d55-419d-a2e9-b217b2be77fa)
 
-From here, we can log in. 
+From here, we can log in with '<Enter>'. 
 
 ![image](https://github.com/503525/cse15l-lab-reports/assets/22303922/21eceaba-4075-489c-8e6b-66e50e26e642)
 
 
-
+--- 
 
 ## Cloning the repository from GitHub using SSH:
+
+Keys Pressed: '<CTRL>+<R>', 'git cl', '<Enter>
 
 ## Running the tests for the first time:
 
