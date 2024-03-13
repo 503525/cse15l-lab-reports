@@ -28,6 +28,12 @@ It could be the case that you have an infinite loop in your program. Try using t
 
 To run the JDB, you can run the following commands: 
 
+```
+javac -g .:lib/* *.java
+jdb -classpath .:lib/* org.junit.runner.JUnitCore TestListExamples
+```
+
+
 
 ### Student's Implementation of TA Advice:
 
